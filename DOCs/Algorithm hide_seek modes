@@ -1,0 +1,16 @@
+>> Robotul care cauta(mode seek):
+	1. Robotul incepe dintr-o pozitie fixa pe mapa mapata de mine.
+	2. Calculeaza punctele pe care nu le vede (ca o serie de pixeli)
+	3. Alege cel mai aproape punct si pleaca spre el (mai exact in centrul lui?)
+	4. Cand ajunge in punctul stabilit face procesare imagini pentru a stabili daca a gasit sau nu robotul.
+	5. Daca nu -> se reia punctul 2
+	  #Daca da -> se opreste si analizeaza comportamentul robotului (fiecare interval stabilit (2 secunde?) verifica pentru a gasi robotul ascuns) care se ascunde (daca nu-l mai vede -> reia punctul 2; daca il vede -> se reia punctul 4(bucla))
+
+
+>> Robotul care se ascunde(mode hide):
+	1. Robotul incepe dintr-o pozitie fixa pe mapa mapata de mine.
+	2. Calculeaza punctele pe care nu le vede (ca o serie de pixeli)
+	3. Alege cel mai departe punct si pleaca spre el (mai exact in centrul lui?)
+	4. La fiecare interval stabilit (2 secunde?) verifica pentru a gasi robotul care cauta
+	5. Daca il vede -> se reia punctul 2
+	   Daca nu il vede -> se reia punctul 4(bucla)

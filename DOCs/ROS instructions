@@ -1,0 +1,14 @@
+>> start simulation:
+	roslaunch turtlebot3_gazebo turtlebot3_world.launch
+
+>> start keyboard controls:
+	roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+>> start publisher and subscriber:
+	rosrun ps1d_project talker.py/listener.py (needs started simulation(punct 1))
+
+>> cd into project working directory:
+	roscd ps1d_project
+
+>> start wiz navigation using created map:
+	roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=/home/ion/catkin_ws/src/ps1d_project/map/map.yaml
